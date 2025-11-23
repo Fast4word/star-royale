@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Active Games — Star Royale</title>
+  <meta name="description" content="Active games listings for Star Royale." />
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Star Royale home">
+        <svg class="logo" viewBox="0 0 48 48" aria-hidden="true">
+          <defs>
+            <linearGradient id="g2" x1="0" x2="1">
+              <stop offset="0" stop-color="#68E0CF"/>
+              <stop offset="1" stop-color="#5A72FF"/>
+            </linearGradient>
+          </defs>
+          <rect x="6" y="6" width="36" height="36" rx="8" fill="url(#g2)"/>
+        </svg>
+        <span class="brand-text">Star Royale</span>
+      </a>
+
+      <nav class="nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="active-games.html" class="cta">Active Games</a>
+        <a href="#download">Play Now</a>
+      </nav>
+
+      <button class="mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="container" style="padding:36px 20px;">
+      <h1 class="section-title">Active Games</h1>
+      <p class="muted">Paste or link active sessions below. Cards are styled — replace href and content with your active game links.</p>
+
+      <div class="active-grid" id="active-games-list">
+        <!-- Example placeholder cards. Replace these anchors with your game links -->
+        <a class="game-card" href="#" title="Active Game 1">
+          <div class="game-card-body">
+            <h3>Active Game 1</h3>
+            <p class="muted">Host name or short note — replace with your link.</p>
+          </div>
+          <div class="game-card-meta">Join</div>
+        </a>
+
+        <a class="game-card" href="#" title="Active Game 2">
+          <div class="game-card-body">
+            <h3>Active Game 2</h3>
+            <p class="muted">Host name or short note — replace with your link.</p>
+          </div>
+          <div class="game-card-meta">Join</div>
+        </a>
+
+        <!-- Add more cards as needed -->
+      </div>
+
+      <p class="muted" style="margin-top:18px;">Tip: keep titles short. You can include query parameters in links for session tokens or direct joins.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="copyright">© <span id="year"></span> Star Royale — All rights reserved.</p>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

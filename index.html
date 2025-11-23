@@ -1,1 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Star Royale — Official</title>
+  <meta name="description" content="Star Royale — fast-paced, competitive space arena. Join the fight for supremacy among the stars." />
 
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Theme color -->
+  <meta name="theme-color" content="#071028" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="Star Royale home">
+        <svg class="logo" viewBox="0 0 48 48" aria-hidden="true">
+          <defs>
+            <linearGradient id="g" x1="0" x2="1">
+              <stop offset="0" stop-color="#68E0CF"/>
+              <stop offset="1" stop-color="#5A72FF"/>
+            </linearGradient>
+          </defs>
+          <path d="M24 4 L30 18 L46 18 L33 28 L38 42 L24 34 L10 42 L15 28 L2 18 L18 18 Z" fill="url(#g)"/>
+        </svg>
+        <span class="brand-text">Star Royale</span>
+      </a>
+
+      <nav class="nav" aria-label="Main">
+        <a href="#features">Features</a>
+        <a href="#media">Media</a>
+        <a href="#download" class="cta">Play Now</a>
+      </nav>
+
+      <button class="mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Conquer the Cosmos in Star Royale</h1>
+          <p class="subtitle">Fast multiplayer arenas • Ship customisation • Ranked seasons</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#download">Play Beta</a>
+            <a class="btn btn-outline" href="#features">Learn More</a>
+          </div>
+
+          <ul class="badges" aria-hidden="true">
+            <li>Cross-platform</li>
+            <li>120fps Optimised</li>
+            <li>Controller Ready</li>
+          </ul>
+        </div>
+
+        <div class="hero-media" aria-hidden="false">
+          <div class="device">
+            <div class="screen">
+              <!-- Placeholder animated starfield -->
+              <canvas id="starfield" width="640" height="360" role="img" aria-label="Animated starfield"></canvas>
+              <div class="screen-overlay">
+                <div class="live-info">Ranked • Season 7</div>
+                <div class="screenshot">
+                  <!-- sample ship SVG -->
+                  <svg viewBox="0 0 100 60" class="ship" aria-hidden="true">
+                    <g fill="#fff">
+                      <path d="M50 4 L62 36 L50 28 L38 36 Z" opacity="0.95" fill="#9BE7FF"/>
+                      <rect x="44" y="28" width="12" height="6" rx="2" fill="#3F5DFF"/>
+                      <circle cx="50" cy="44" r="6" fill="#FFB86B"/>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="device-footer">Trailer • 0:42</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-stars" aria-hidden="true"></div>
+    </section>
+
+    <section id="features" class="features container">
+      <h2 class="section-title">Why you'll love Star Royale</h2>
+      <div class="feature-grid">
+        <article class="feature">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 L15 8 L22 9 L17 13 L18 20 L12 17 L6 20 L7 13 L2 9 L9 8 Z" fill="#5A72FF"/></svg>
+          <h3>Arcade-competitive</h3>
+          <p>Short rounds, high skill ceiling. Jump into a match in under a minute.</p>
+        </article>
+
+        <article class="feature">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 L22 12 L12 22 L2 12 Z" fill="#68E0CF"/></svg>
+          <h3>Ship Customisation</h3>
+          <p>Mix modules, skins and loadouts. Build the ship that suits your playstyle.</p>
+        </article>
+
+        <article class="feature">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="#FFB86B"/></svg>
+          <h3>Ranked Seasons</h3>
+          <p>Climb leaderboards and earn exclusive rewards each season.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="media" class="media container">
+      <h2 class="section-title">Media</h2>
+      <div class="media-grid">
+        <div class="media-item">
+          <img src="https://via.placeholder.com/560x315?text=Trailer+Frame+1" alt="Trailer frame showing two ships duelling" />
+        </div>
+        <div class="media-item">
+          <img src="https://via.placeholder.com/560x315?text=Screenshot" alt="Screenshot showing arena and HUD" />
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="cta-strip">
+      <div class="container cta-inner">
+        <div>
+          <h2>Ready to join the fray?</h2>
+          <p>Download the beta, join our Discord and get starter rewards.</p>
+        </div>
+        <div class="cta-buttons">
+          <a class="btn btn-primary" href="#" role="button">Download (Windows)</a>
+          <a class="btn btn-ghost" href="#" role="button">Join Discord</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="copyright">© <span id="year"></span> Star Royale — All rights reserved.</p>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Careers</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

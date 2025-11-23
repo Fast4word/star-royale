@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Star Royale — Official</title>
-  <meta name="description" content="Star Royale — fast-paced, competitive space arena. Join the fight for supremacy among the stars." />
+  <meta name="description" content="Star Royale — community-driven online platform." />
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#" aria-label="Star Royale home">
+      <a class="brand" href="index.html" aria-label="Star Royale home">
         <svg class="logo" viewBox="0 0 48 48" aria-hidden="true">
           <defs>
             <linearGradient id="g" x1="0" x2="1">
@@ -26,14 +26,14 @@
               <stop offset="1" stop-color="#5A72FF"/>
             </linearGradient>
           </defs>
-          <path d="M24 4 L30 18 L46 18 L33 28 L38 42 L24 34 L10 42 L15 28 L2 18 L18 18 Z" fill="url(#g)"/>
+          <rect x="6" y="6" width="36" height="36" rx="8" fill="url(#g)"/>
         </svg>
         <span class="brand-text">Star Royale</span>
       </a>
 
       <nav class="nav" aria-label="Main">
-        <a href="#features">Features</a>
-        <a href="#media">Media</a>
+        <a href="#about">About</a>
+        <a href="active-games.html">Active Games</a>
         <a href="#download" class="cta">Play Now</a>
       </nav>
 
@@ -47,90 +47,67 @@
     <section class="hero">
       <div class="container hero-inner">
         <div class="hero-copy">
-          <h1>Conquer the Cosmos in Star Royale</h1>
-          <p class="subtitle">Fast multiplayer arenas • Ship customisation • Ranked seasons</p>
+          <h1>Star Royale</h1>
+          <p class="subtitle">A community-driven online experience.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#download">Play Beta</a>
-            <a class="btn btn-outline" href="#features">Learn More</a>
+            <a class="btn btn-outline" href="active-games.html">Active Games</a>
           </div>
 
           <ul class="badges" aria-hidden="true">
-            <li>Cross-platform</li>
-            <li>120fps Optimised</li>
-            <li>Controller Ready</li>
+            <li>Live</li>
+            <li>Community</li>
+            <li>Social</li>
           </ul>
         </div>
 
-        <div class="hero-media" aria-hidden="false">
+        <div class="hero-media" aria-hidden="true">
           <div class="device">
-            <div class="screen">
-              <!-- Placeholder animated starfield -->
-              <canvas id="starfield" width="640" height="360" role="img" aria-label="Animated starfield"></canvas>
+            <div class="screen placeholder-screen">
               <div class="screen-overlay">
-                <div class="live-info">Ranked • Season 7</div>
-                <div class="screenshot">
-                  <!-- sample ship SVG -->
-                  <svg viewBox="0 0 100 60" class="ship" aria-hidden="true">
-                    <g fill="#fff">
-                      <path d="M50 4 L62 36 L50 28 L38 36 Z" opacity="0.95" fill="#9BE7FF"/>
-                      <rect x="44" y="28" width="12" height="6" rx="2" fill="#3F5DFF"/>
-                      <circle cx="50" cy="44" r="6" fill="#FFB86B"/>
-                    </g>
-                  </svg>
-                </div>
+                <div class="logo-mark">SR</div>
               </div>
             </div>
-            <div class="device-footer">Trailer • 0:42</div>
+            <div class="device-footer">Latest build</div>
           </div>
         </div>
       </div>
-      <div class="hero-stars" aria-hidden="true"></div>
     </section>
 
-    <section id="features" class="features container">
-      <h2 class="section-title">Why you'll love Star Royale</h2>
+    <section id="about" class="features container">
+      <h2 class="section-title">About</h2>
+      <p class="muted">Star Royale is an online platform built around player interaction and community features. Find or host sessions, view active games, and connect with other players.</p>
+
       <div class="feature-grid">
         <article class="feature">
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 L15 8 L22 9 L17 13 L18 20 L12 17 L6 20 L7 13 L2 9 L9 8 Z" fill="#5A72FF"/></svg>
-          <h3>Arcade-competitive</h3>
-          <p>Short rounds, high skill ceiling. Jump into a match in under a minute.</p>
+          <h3>Community-driven</h3>
+          <p>Tools and listings centered around keeping games active and discoverable.</p>
         </article>
 
         <article class="feature">
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 L22 12 L12 22 L2 12 Z" fill="#68E0CF"/></svg>
-          <h3>Ship Customisation</h3>
-          <p>Mix modules, skins and loadouts. Build the ship that suits your playstyle.</p>
+          <h3>Sessions & lists</h3>
+          <p>Quick access to live sessions and active game pages.</p>
         </article>
 
         <article class="feature">
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="#FFB86B"/></svg>
-          <h3>Ranked Seasons</h3>
-          <p>Climb leaderboards and earn exclusive rewards each season.</p>
+          <h3>Friendly tools</h3>
+          <p>Simple, fast interfaces that work across devices.</p>
         </article>
-      </div>
-    </section>
-
-    <section id="media" class="media container">
-      <h2 class="section-title">Media</h2>
-      <div class="media-grid">
-        <div class="media-item">
-          <img src="https://via.placeholder.com/560x315?text=Trailer+Frame+1" alt="Trailer frame showing two ships duelling" />
-        </div>
-        <div class="media-item">
-          <img src="https://via.placeholder.com/560x315?text=Screenshot" alt="Screenshot showing arena and HUD" />
-        </div>
       </div>
     </section>
 
     <section id="download" class="cta-strip">
       <div class="container cta-inner">
         <div>
-          <h2>Ready to join the fray?</h2>
-          <p>Download the beta, join our Discord and get starter rewards.</p>
+          <h2>Get started</h2>
+          <p>Download the latest build or join our community hub.</p>
         </div>
         <div class="cta-buttons">
           <a class="btn btn-primary" href="#" role="button">Download (Windows)</a>
-          <a class="btn btn-ghost" href="#" role="button">Join Discord</a>
+          <a class="btn btn-ghost" href="#" role="button">Community Hub</a>
         </div>
       </div>
     </section>
@@ -142,7 +119,7 @@
       <nav class="footer-nav" aria-label="Footer">
         <a href="#">Privacy</a>
         <a href="#">Terms</a>
-        <a href="#">Careers</a>
+        <a href="#">Contact</a>
       </nav>
     </div>
   </footer>
